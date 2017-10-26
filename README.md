@@ -1,12 +1,14 @@
 ### In this tutorial we will cover the following SNAPSHOT testing scenarios:
 
 &nbsp;
+
 **1. Presentational/functional component snapshot**<br/>
 **2. Container component snapshot**<br/>
 **- 2.1 mobx-react/inject problem**<br/>
 **- 2.2 SHALLOW rendering - "ENZYME/shallow" vs "react-test-rendered/shallow**<br/>
 **- 2.3 Full render with 'mobx-react/inject' mock**<br/>
 **3. React-Intl problem**
+
 &nbsp;&nbsp;
 
 ### 1. Presentational/functional component snapshot
