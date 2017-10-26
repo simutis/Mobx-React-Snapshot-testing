@@ -1,0 +1,1 @@
+# Mobx-React-Snapshot-testing
