@@ -1,4 +1,6 @@
 ### In this tutorial we will cover the following SNAPSHOT testing scenarios:
+regarding the "mobx-react" mock, we assume that the reader knows about Jest dependency mocking if not, please read here:
+https://facebook.github.io/jest/docs/en/manual-mocks.html
 
 &nbsp;
 
