@@ -42,13 +42,13 @@ export const someComponent = (props) => <div ......./>
 export default inject('uiStore')(someComponent);
 ```
 
-> PROBLEM: is that you will not be able to pass the properties directly to a child components in the are decorated wiht "mobx-react/inject".
+> PROBLEM: is that you will not be able to pass the properties directly to a child components in the are decorated with "mobx-react/inject".
 In this case we have 2 options here:
 - mock 'mobx-react/inject' ourselves
-- use shallow renderer that will not execute child componenents
+- use shallow renderer that will not execute child components
 &nbsp;
 ####  2.2 SHALLOW container rendering - “ENZYME/shallow” vs "react-test-rendered/shallow"
-The problem is that "ENZYME/shallow" tries to execute all child components, even if in its output it renders only the top level
+The problem is that "ENZYME/shallow" tries to execute all child components, even if it renders only the top level
 > So we should use "react-test-rendered/shallow" all the time as it does not have the mentioned problem, as a result your test will not be dependent on the failure of child component.
 ```javascript
 import ReactShallowRenderer from 'react-test-renderer/shallow';
