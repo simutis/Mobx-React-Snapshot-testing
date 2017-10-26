@@ -42,7 +42,7 @@ export const someComponent = (props) => <div ......./>
 export default inject('uiStore')(someComponent);
 ```
 
-> PROBLEM: is that you will not be able to pass the properties directly to a child components in the are decorated with "mobx-react/inject".
+> PROBLEM: is that you will not be able to pass the properties directly to a child components if they are wrapped with "mobx-react/inject".
 In this case we have 2 options here:
 - mock 'mobx-react/inject' ourselves
 - use shallow renderer that will not execute child components
